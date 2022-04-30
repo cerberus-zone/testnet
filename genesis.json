@@ -5,7 +5,7 @@
   "consensus_params": {
     "block": {
       "max_bytes": "22020096",
-      "max_gas": "-1",
+      "max_gas": "600000000",
       "time_iota_ms": "1000"
     },
     "evidence": {
@@ -169,18 +169,18 @@
         "min_deposit": [
           {
             "denom": "ucrbrus",
-            "amount": "10000000"
+            "amount": "1000000000000"
           }
         ],
-        "max_deposit_period": "172800s"
+        "max_deposit_period": "21500s"
       },
       "voting_params": {
-        "voting_period": "172800s"
+        "voting_period": "21500s"
       },
       "tally_params": {
-        "quorum": "0.334000000000000000",
+        "quorum": "0.250000000000000000",
         "threshold": "0.500000000000000000",
-        "veto_threshold": "0.334000000000000000"
+        "veto_threshold": "0.250000000000000000"
       }
     },
     "ibc": {
@@ -221,7 +221,7 @@
       "params": {
         "mint_denom": "ucrbrus",
         "inflation_rate_change": "0.130000000000000000",
-        "inflation_max": "0.200000000000000000",
+        "inflation_max": "0.430000000000000000",
         "inflation_min": "0.070000000000000000",
         "goal_bonded": "0.670000000000000000",
         "blocks_per_year": "6311520"
@@ -230,18 +230,18 @@
     "params": null,
     "slashing": {
       "params": {
-        "signed_blocks_window": "100",
-        "min_signed_per_window": "0.500000000000000000",
+        "signed_blocks_window": "12000",
+        "min_signed_per_window": "0.025000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.010000000000000000"
+        "slash_fraction_downtime": "0.001000000000000000"
       },
       "signing_infos": [],
       "missed_blocks": []
     },
     "staking": {
       "params": {
-        "unbonding_time": "1814400s",
+        "unbonding_time": "86500s",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
