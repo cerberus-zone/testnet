@@ -14,7 +14,7 @@ Use _cerberus-test-1_ as your chain ID and the genesis file below.
 cd $HOME/.cerberus/config/
 
 wget -O $HOME/.cerberus/config/genesis.json \
-https://raw.githubusercontent.com/cerberus-zone/testnet/main/genesis.json?token=GHSAT0AAAAAABUCZPUZZ32XRD7OXSNO3SG2YTMY3TQ
+https://cerberus-chain.s3.us-east-2.amazonaws.com/test/genesis.json
 ```
 
 ### Chain ID
@@ -28,7 +28,7 @@ Using a single peer right now for testnet. Submit a PR if you would like to be a
 ```
 cd $HOME/.cerberus/config/
 
-PEERS=$(curl https://raw.githubusercontent.com/cerberus-zone/testnet/main/peers.txt?token=GHSAT0AAAAAABUCZPUZMZNP3FKY7W5FVEGMYTMZEZQ | \
+PEERS=$(curl https://cerberus-chain.s3.us-east-2.amazonaws.com/test/peers.txt | \
 head -n 11 | sed 's/$/,/' | tr -d '\n' | sed '$ s/.$//'); sed "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" \
 $HOME/.cerberus/config/config.toml -i
 ```
