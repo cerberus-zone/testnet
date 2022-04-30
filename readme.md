@@ -19,7 +19,7 @@ Just a single peer right now for testnet. Submit a PR if you would like to the b
 ```
 cd $HOME/.cerberus/config/
 
-PEERS=$(curl https://raw.githubusercontent.com/cerberus-zone/cerberus_genesis/main/peers.txt | \
+PEERS=$(curl https://raw.githubusercontent.com/cerberus-zone/testnet/main/peers.txt?token=GHSAT0AAAAAABUCZPUZMZNP3FKY7W5FVEGMYTMZEZQ | \
 head -n 11 | sed 's/$/,/' | tr -d '\n' | sed '$ s/.$//'); sed "s/persistent_peers = \"\"/persistent_peers = \"$PEERS\"/" \
 $HOME/.cerberus/config/config.toml -i
 ```
