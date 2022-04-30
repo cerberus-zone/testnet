@@ -12,6 +12,10 @@ wget -O $HOME/.cerberus/config/genesis.json
 https://raw.githubusercontent.com/cerberus-zone/testnet/main/genesis.json?token=GHSAT0AAAAAABUCZPUZZ32XRD7OXSNO3SG2YTMY3TQ
 ```
 
+### Chain ID
+
+Be sure to use _cerberus-test-1_ as the chain ID when creating your validator.
+
 ### Setup peer
 
 Just a single peer right now for testnet. Submit a PR if you would like to the be added to the peer list.
