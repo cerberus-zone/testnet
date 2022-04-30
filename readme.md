@@ -13,8 +13,7 @@ Use _cerberus-test-1_ as your chain ID and the genesis file below.
 ```
 cd $HOME/.cerberus/config/
 
-wget -O $HOME/.cerberus/config/genesis.json
-
+wget -O $HOME/.cerberus/config/genesis.json \
 https://raw.githubusercontent.com/cerberus-zone/testnet/main/genesis.json?token=GHSAT0AAAAAABUCZPUZZ32XRD7OXSNO3SG2YTMY3TQ
 ```
 
