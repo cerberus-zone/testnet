@@ -8,6 +8,8 @@ You can use the docs <a href="hhttps://www.cerberus.zone/running-a-validator.htm
 
 Use _cerberus-test-1_ as your chain ID and the genesis file below.
 
+Use _release/v1.0.1_
+
 ### Get Testnet genensis file
 
 ```
