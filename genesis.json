@@ -1,5 +1,5 @@
 {
-  "genesis_time": "2022-04-30T20:35:00.579459894Z",
+  "genesis_time": "2022-05-02T04:11:25.419163595Z",
   "chain_id": "cerberus-test-1",
   "initial_height": "1",
   "consensus_params": {
@@ -103,7 +103,7 @@
               {
                 "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
                 "description": {
-                  "moniker": "Test Cerberus Validator",
+                  "moniker": "Cerberus Testnet",
                   "identity": "",
                   "website": "cerberus.zone",
                   "security_contact": "hadeshounds@cerberus.zone",
@@ -155,7 +155,7 @@
             }
           },
           "signatures": [
-            "reRORcS9JVcGsuG9aI1vDVlUe1fHPAqRrfqP311HzK0hMJJzTtSlJPyI7vusvmzsqNoORhzpXKGIX2fh8o2ioQ=="
+            "GwNXOlyqLoHZQ+VxG/hVLikj8wBO3G+FC7reztpDUqQ1j9KIKqbErYTh0Ul8aH7nSaXtoll52KX49qBfsekuiA=="
           ]
         }
       ]
@@ -172,15 +172,15 @@
             "amount": "1000000000000"
           }
         ],
-        "max_deposit_period": "21500s"
+        "max_deposit_period": "43200s"
       },
       "voting_params": {
-        "voting_period": "21500s"
+        "voting_period": "43200s"
       },
       "tally_params": {
-        "quorum": "0.250000000000000000",
+        "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
-        "veto_threshold": "0.250000000000000000"
+        "veto_threshold": "0.334000000000000000"
       }
     },
     "ibc": {
@@ -231,7 +231,7 @@
     "slashing": {
       "params": {
         "signed_blocks_window": "12000",
-        "min_signed_per_window": "0.024000000000000000",
+        "min_signed_per_window": "0.025000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
         "slash_fraction_downtime": "0.001000000000000000"
@@ -241,7 +241,7 @@
     },
     "staking": {
       "params": {
-        "unbonding_time": "86500s",
+        "unbonding_time": "86400s",
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
